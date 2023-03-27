@@ -162,7 +162,7 @@ char *ApplyHashFlag(Specs type, char *dest, PrintParams *params) {
 char *ApplyHashFlagOctal(char *dest, PrintParams *params) {
   char *result = NULL;
 
-  if (dest[0] != '0') {  // If digit = 0, it wouldn't be true, because hashflag
+  if (dest[0] != '0') {  // If digit equal 0, it wouldn't be true, because hashflag
                          // handling first
     char *prefix = malloc(2);
     prefix[0] = '0';

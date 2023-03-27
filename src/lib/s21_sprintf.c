@@ -173,6 +173,7 @@ char print_special_symbols[10] = {
     [0] = '-', [1] = '+', [2] = '#', [3] = ' ', [4] = '*',
     [5] = 'h', [6] = 'l', [7] = 'L', [8] = '0', [9] = '.'};
 
+// Negative powers of two. Needed to translate a double into a string
 char *const fract_value[73] = {
     [0] =
         "0."

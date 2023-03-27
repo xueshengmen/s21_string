@@ -50,19 +50,6 @@ double GetDoubleValue(PrintParams *params, va_list *arg_ptr) {
   return value;
 }
 
-// If get \0, return string, wich contain only \0
-// char *GetChar(int wchar) {
-//   int len = 0;
-//   char *ptr = (char *)&wchar;
-//   for (; len <= 4; len++)
-//     if (*(ptr + len) == 0) break;
-//   char *res = malloc(len + 1);
-//   for (int i = 0; i < len; i++) res[i] = *(ptr + ((len - 1) - i));
-//   res[len] = '\0';
-//   return res;
-// }
-
-// If get \0, return string, wich contain only \0
 char *GetChar(int wchar) {
   char *res = malloc(2);
   res[0] = wchar;

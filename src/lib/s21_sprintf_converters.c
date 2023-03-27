@@ -4,6 +4,18 @@
 // digit after point (with null fractal part) Limits on arounding: correctly
 // round in range from 0 to 40; if accuracy in the range from 40 to 70 (0.05%
 // fails)
+
+/**
+ * @brief 
+ * Limits on convert: 52 digit after point (with not null fractal part); 70
+ * digit after point (with null fractal part) Limits on arounding: correctly
+ * round in range from 0 to 40; if accuracy in the range from 40 to 70 (0.05%
+ * fails)
+ * @param num 
+ * @param accuracy number of digit after point
+ * @param params 
+ * @return char* - Double converted in string
+ */
 char* DoubleToString(double num, int accuracy, PrintParams* params) {
   accuracy = accuracy < 0 ? DEFAULT_ACCURACY : accuracy;
   char* res = CheckSpecialValue(num);
